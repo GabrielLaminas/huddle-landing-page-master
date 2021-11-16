@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f5faff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  margin-bottom: 80px;
+}
+
+.menu__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__container img {
+  max-width: 65%;
+}
+
+.menu__container .menu__button {
+  padding: 7px 24px;
+  border: 1px solid #ff52bf;
+  border-radius: 40px;
+  color: #ff52bf;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.menu__container .menu__button:hover {
+  border: 1px solid rgba(255, 143, 216, 0.8);
+  color: rgba(255, 143, 216, 0.8);
+  -webkit-transition: border 0.2s, color 0.2s;
+  transition: border 0.2s, color 0.2s;
+}
+/*# sourceMappingURL=style.css.map */

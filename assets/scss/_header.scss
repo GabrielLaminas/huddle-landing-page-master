@@ -1,0 +1,36 @@
+.menu{
+   margin-bottom: 80px;
+}
+
+.menu__container{
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 40px 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   img{
+      max-width: 65%;
+   }
+
+   .menu__button{
+      padding: 7px 24px;
+      border: 1px solid $Pink;
+      border-radius: 40px;
+      color: $Pink;
+      font-family: $font-family-opensans;
+      font-weight: 400;
+      text-transform: capitalize;
+      white-space: nowrap;
+      cursor: pointer;
+
+      &:hover{
+         border: 1px solid rgba(
+            $color: $Light-Pink, 
+            $alpha: .8);
+         color: rgba($color: $Light-Pink, $alpha: .8);
+         transition: border 0.2s, color 0.2s;
+      }
+   }   
+}
