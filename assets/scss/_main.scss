@@ -1,0 +1,106 @@
+.intro{
+   margin: 0 auto;
+   padding: 0 20px;
+
+   .intro__img{
+      margin: 120px auto 80px auto;
+   }
+}
+
+.intro__info{
+
+   .intro__info__title{
+      margin-bottom: 16px;
+      color: $Very-Dark-Cyan;
+      font-family: $font-family-poppins;
+      font-size: 2.625em; //ajustar 42
+      font-weight: 700;
+      text-align: center;
+
+      @include mobile{
+         font-size: 1.625em; //26
+      }
+   }
+
+   .intro__info__text{
+      max-width: 420px;
+      margin: 0 auto 40px auto;
+      color: $Very-Dark-Cyan;
+      font-family: $font-family-opensans;
+      font-size: 0.875em; //ajustar 14
+      font-weight: 400;
+      line-height: 21px;
+      text-align: center;
+
+      @include mobile{
+         max-width: 300px;
+         margin-bottom: 50px;
+      }
+   }
+   .intro__info__btn{
+      @include button-pink;
+      
+      &:hover{
+         background-color: rgba(
+            $color: $Light-Pink, 
+            $alpha: 1.0);
+      }
+   }
+}
+
+.intro__flex{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-evenly;
+   text-align: center;
+
+   .intro__communities{
+      padding: 60px 30px;
+
+      &::before{
+         content: '';
+         width: 47px;
+         height: 41px;
+         display: block;
+         background-image: url(../images/icon/icon-communities.svg);
+         background-repeat: no-repeat;
+      }
+   }
+   .intro__messages{
+      padding: 60px 30px;
+
+      &::before{
+         content: '';
+         width: 48px;
+         height: 41px;
+         display: block;
+         background-image: url(../images/icon/icon-messages.svg);
+         background-repeat: no-repeat;
+      }
+   }
+
+   .intro__flex__number{
+      margin-bottom: 30px;
+      color: $Very-Dark-Cyan;
+      font-family: $font-family-opensans;
+      font-size: 5em;
+      font-weight: 700;     
+      
+      @include mobile{
+         font-size: 4em;
+      }
+   }
+   .intro__flex__text{
+      color: rgba($color: $Very-Dark-Cyan, 
+         $alpha: .45);
+      font-family: $font-family-opensans;
+      font-size: 1.125em;
+      letter-spacing: 0.5px;
+      font-weight: 400; 
+
+      @include mobile{
+         font-size: 1em;
+      }
+   }
+}

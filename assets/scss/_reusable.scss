@@ -1,0 +1,23 @@
+@mixin button-pink {
+   margin: 0 auto;
+   padding: 16px 64px;
+   display: block;
+   background-color: $Pink;
+   color: $Very-Pale-Blue;
+   font-size: 0.875em;
+   font-family: $font-family-opensans;
+   font-weight: 600; //pode mudar
+   letter-spacing: 0.4px;
+   transition: all 0.2s;
+   box-shadow: 0 5px 10px rgba(
+      $color: #000000, 
+      $alpha: .3);
+   border: 0;
+   border-radius: 30px;
+   cursor: pointer;
+
+   @include mobile{
+      padding: 12px 40px;
+      font-size: 0.75em;
+   }
+}
