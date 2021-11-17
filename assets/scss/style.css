@@ -25,6 +25,12 @@ a {
   margin-bottom: 140px;
 }
 
+@media screen and (max-width: 480px) {
+  .menu {
+    margin-bottom: 90px;
+  }
+}
+
 .menu__container {
   max-width: 1200px;
   margin: 0 auto;
@@ -211,7 +217,7 @@ a {
 }
 
 .container__flex {
-  margin: 300px 0;
+  margin: 200px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,6 +295,12 @@ a {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .container__flex {
+    margin: 120px 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .container__flex--column {
     -webkit-box-orient: vertical;
@@ -296,5 +308,101 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.callback {
+  margin-bottom: 100px;
+  padding: 0 20px;
+}
+
+.callback .callback__text {
+  margin-bottom: 28px;
+  color: #00252e;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.75em;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .callback .callback__text {
+    margin-bottom: 35px;
+  }
+}
+
+.callback .callback__btn {
+  margin: 0 auto;
+  padding: 16px 64px;
+  display: block;
+  background-color: #ff52bf;
+  color: #f5faff;
+  font-size: 0.875em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .callback .callback__btn {
+    padding: 12px 40px;
+    font-size: 0.75em;
+  }
+}
+
+.callback .callback__btn:hover {
+  background-color: rgba(255, 143, 216, 0.9);
+}
+
+.footer {
+  background-color: #f5faff;
+}
+
+.footer::before {
+  content: '';
+  max-width: 100%;
+  height: 158px;
+  display: block;
+  background-image: url(../images/bg/bg-footer-top-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 375px) {
+  .footer::before {
+    height: 53px;
+    background-image: url(../images/bg/bg-footer-top-mobile.svg);
+  }
+}
+
+.footer__container {
+  background-color: #00252e;
+  width: 100%;
+}
+
+.container__itens {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid red;
+}
+
+.footer__item1 {
+  margin: 0 30px;
+}
+
+.footer__item2 {
+  margin: 0 30px;
 }
 /*# sourceMappingURL=style.css.map */

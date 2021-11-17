@@ -1,5 +1,9 @@
 .menu{
    margin-bottom: 140px;
+
+   @include mobile{
+      margin-bottom: 90px;
+   }
 }
 
 .menu__container{

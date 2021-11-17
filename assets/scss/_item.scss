@@ -1,0 +1,26 @@
+.callback{
+   margin-bottom: 100px;
+   padding: 0 20px;
+
+   .callback__text{
+      margin-bottom: 28px;
+      color: $Very-Dark-Cyan;
+      font-family: $font-family-poppins;
+      font-size: 1.75em; //28
+      font-weight: 700;
+      text-align: center;
+
+      @include mobile{
+         margin-bottom: 35px;
+      }
+   }
+   .callback__btn{
+      @include button-pink; 
+
+      &:hover{
+         background-color: rgba(
+            $color: $Light-Pink, 
+            $alpha: .9);
+      }
+   }
+}
