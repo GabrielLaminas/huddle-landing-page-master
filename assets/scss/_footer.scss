@@ -51,7 +51,7 @@
       margin-bottom: 20px;
       color: $Very-Pale-Blue;
       font-family: $font-family-opensans;
-      font-size: 0.75em; //12
+      font-size: 0.75em;
       font-weight: 400;
    }
    .footer__item1__textimg{
@@ -82,8 +82,7 @@
          height: 34px;
          
          &:hover{
-            //transition: all 0.2s;
-            filter: invert(92%) sepia(13%) saturate(271%) hue-rotate(147deg) brightness(103%) contrast(97%);
+            filter: invert(74%) sepia(10%) saturate(5652%) hue-rotate(295deg) brightness(96%) contrast(107%);
          }
       }
 
@@ -104,7 +103,7 @@
       margin-bottom: 20px;
       color: $Very-Pale-Blue;
       font-family: $font-family-opensans;
-      font-size: 1.125em; //18
+      font-size: 1.125em;
       font-weight: 600;
       text-transform: uppercase;
    }
@@ -113,13 +112,13 @@
       margin-bottom: 30px;
       color: $Very-Pale-Blue;
       font-family: $font-family-opensans;
-      font-size: 0.75em; //12
+      font-size: 0.75em;
       font-weight: 400;
    }
    form{
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
+      align-items: flex-start;
 
       .form__input{
          margin-right: 30px;
@@ -137,11 +136,19 @@
                width: 100%;
             }
          }
-
+         
          span{
+            margin-top: 5px;
             display: none;
+            color: $Light-Red;
+            font-family: $font-family-opensans;
+            font-size: 12px;
          }
 
+         input[type=email]:required:invalid{
+            background-color: rebeccapurple;
+         }
+         //https://www.w3schools.com/css/css_pseudo_elements.asp
          @include mobile{
             margin-right: 0;
          }
@@ -152,10 +159,16 @@
          background-color: $Pink;
          color: $Very-Pale-Blue;
          font-size: $font-family-opensans;
-         font-weight: 400;
+         font-weight: 500;
          border-radius: 6px;
          border: 0;
          cursor: pointer;
+
+         &:hover{
+            background-color: rgba(
+               $color: $Light-Pink, 
+               $alpha: .8);
+         }
 
          @include mobile{
             margin-top: 12px;

@@ -470,8 +470,8 @@ a {
 }
 
 .footer__item1 .footer__item1__socialmedia img:hover {
-  -webkit-filter: invert(92%) sepia(13%) saturate(271%) hue-rotate(147deg) brightness(103%) contrast(97%);
-          filter: invert(92%) sepia(13%) saturate(271%) hue-rotate(147deg) brightness(103%) contrast(97%);
+  -webkit-filter: invert(74%) sepia(10%) saturate(5652%) hue-rotate(295deg) brightness(96%) contrast(107%);
+          filter: invert(74%) sepia(10%) saturate(5652%) hue-rotate(295deg) brightness(96%) contrast(107%);
 }
 
 @media screen and (max-width: 480px) {
@@ -514,9 +514,9 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .footer__item2 form .form__input {
@@ -545,7 +545,15 @@ a {
 }
 
 .footer__item2 form .form__input span {
+  margin-top: 5px;
   display: none;
+  color: #ff4242;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+}
+
+.footer__item2 form .form__input input[type=email]:required:invalid {
+  background-color: rebeccapurple;
 }
 
 @media screen and (max-width: 480px) {
@@ -559,10 +567,14 @@ a {
   background-color: #ff52bf;
   color: #f5faff;
   font-size: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   border-radius: 6px;
   border: 0;
   cursor: pointer;
+}
+
+.footer__item2 form button:hover {
+  background-color: rgba(255, 143, 216, 0.8);
 }
 
 @media screen and (max-width: 480px) {
