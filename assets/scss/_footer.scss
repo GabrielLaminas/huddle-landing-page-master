@@ -132,12 +132,17 @@
             border-radius: 6px;
             border: 0;
 
+            &:focus:invalid{
+               border: 1px solid $Light-Red;
+               outline: none;
+            }
+
             @include tablet{
                width: 100%;
             }
          }
-         
-         span{
+
+         .argument{
             margin-top: 5px;
             display: none;
             color: $Light-Red;
@@ -145,9 +150,10 @@
             font-size: 12px;
          }
 
-         input[type=email]:required:invalid{
-            background-color: rebeccapurple;
+         input[type=email]:focus:invalid .argument{
+            display: block;
          }
+
          //https://www.w3schools.com/css/css_pseudo_elements.asp
          @include mobile{
             margin-right: 0;

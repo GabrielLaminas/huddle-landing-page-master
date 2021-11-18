@@ -538,13 +538,18 @@ a {
   border: 0;
 }
 
+.footer__item2 form .form__input input[type=email]:focus:invalid {
+  border: 1px solid #ff4242;
+  outline: none;
+}
+
 @media screen and (max-width: 767px) {
   .footer__item2 form .form__input input[type=email] {
     width: 100%;
   }
 }
 
-.footer__item2 form .form__input span {
+.footer__item2 form .form__input .argument {
   margin-top: 5px;
   display: none;
   color: #ff4242;
@@ -552,8 +557,8 @@ a {
   font-size: 12px;
 }
 
-.footer__item2 form .form__input input[type=email]:required:invalid {
-  background-color: rebeccapurple;
+.footer__item2 form .form__input input[type=email]:focus:invalid .argument {
+  display: block;
 }
 
 @media screen and (max-width: 480px) {
