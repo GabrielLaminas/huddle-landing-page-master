@@ -23,9 +23,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](https://github.com/GabrielLaminas/insure-landing-page-master/blob/main/assets/final-project-insure/Generic%20Laptop.jpg?raw=true)
+![Desktop](https://github.com/GabrielLaminas/huddle-landing-page-master/blob/main/assets/final-project-huddle/Full-Generic-Laptop.jpg?raw=true)
 
-![Mobile](https://github.com/GabrielLaminas/insure-landing-page-master/blob/main/assets/final-project-insure/iPhone%20X.jpg?raw=true)
+![Mobile](https://github.com/GabrielLaminas/huddle-landing-page-master/blob/main/assets/final-project-huddle/Full-iPhone-X.jpg?raw=true)
 
 ## My process
 
