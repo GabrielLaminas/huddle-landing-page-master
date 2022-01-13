@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Huddle landing page with curved sections challenge on Frontend Mentor](https://gabriellaminas.github.io/huddle-landing-page-master/)
+- Live Site URL: [Huddle landing page](https://gabriellaminas.github.io/huddle-landing-page-master/)
 
 ## My process
 
